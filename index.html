@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#dff3ff">
+<title>Happy Birthday, My Love 💙</title>
+<style>
+:root{--sky:#dff3ff;--blue:#8bcdf3;--deep:#367fae;--ink:#23445c;--white:#ffffffd9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:linear-gradient(145deg,#eaf8ff,#d8efff 48%,#f4faff);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;background-image:radial-gradient(#fff 1.5px,transparent 1.5px);background-size:27px 27px;z-index:-1}
+button{font:inherit;cursor:pointer}.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:90px 22px 70px;position:relative;overflow:hidden}
+.hero-inner{max-width:800px;position:relative;z-index:2}.eyebrow{letter-spacing:4px;text-transform:uppercase;font:12px Arial,sans-serif;color:#548eb5}.hero h1{font-size:clamp(3.2rem,10vw,7rem);line-height:.98;margin:22px 0;color:#397fa9;font-weight:normal}.hero h1 span{display:block;font-style:italic;color:#75bce8}.hero p{font:16px/1.8 Arial,sans-serif;max-width:540px;margin:25px auto;color:#52748b}.pill{border:0;border-radius:40px;padding:15px 27px;background:#5ca9d8;color:white;box-shadow:0 10px 25px #6aaed544;transition:.25s}.pill:hover{transform:translateY(-3px);background:#438fbe}.floating{position:absolute;color:#fff;font-size:clamp(24px,5vw,50px);opacity:.75;animation:float 6s ease-in-out infinite}.f1{top:14%;left:9%}.f2{top:23%;right:12%;animation-delay:1s}.f3{bottom:14%;left:17%;animation-delay:2s}.f4{bottom:20%;right:10%;animation-delay:3s}@keyframes float{50%{transform:translateY(-22px) rotate(12deg)}}
+section{padding:85px 22px}.section-inner{max-width:1050px;margin:auto}.section-kicker{text-align:center;text-transform:uppercase;letter-spacing:3px;font:11px Arial,sans-serif;color:#6798b7}.section-title{text-align:center;font-size:clamp(2.2rem,6vw,3.7rem);font-weight:normal;color:#397fa9;margin:12px 0 18px}.sub{text-align:center;font:15px/1.8 Arial,sans-serif;color:#638198;max-width:620px;margin:0 auto 40px}
+.note{max-width:760px;margin:auto;padding:clamp(25px,6vw,55px);border:1px solid #fff;background:#ffffffa8;border-radius:26px;box-shadow:0 18px 60px #5c9dc51c;text-align:center;font-size:clamp(1.15rem,3vw,1.5rem);line-height:1.9}.note .signature{display:block;margin-top:25px;color:#5599c4;font-style:italic}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.photo{border:8px solid #fff;border-radius:18px;overflow:hidden;background:#cceaff;box-shadow:0 12px 30px #3d83a51c;min-height:230px;position:relative;transition:.3s}.photo:nth-child(2){transform:translateY(24px)}.photo:hover{transform:translateY(-5px) rotate(0)}.photo:nth-child(2):hover{transform:translateY(15px)}.photo img{width:100%;height:280px;object-fit:cover;display:block}.photo figcaption{text-align:center;padding:13px 5px;font:13px Arial,sans-serif;color:#5685a2}.video-wrap{max-width:760px;margin:auto;background:#fff;padding:12px;border-radius:22px;box-shadow:0 15px 45px #4c8fb51b}.video-wrap video{width:100%;display:block;border-radius:14px;background:#c5e8fb;max-height:440px}.video-caption{text-align:center;font:14px Arial,sans-serif;color:#638198;padding:14px 4px 5px}
+.surprise{max-width:700px;margin:auto;text-align:center}.gift{width:150px;height:130px;margin:35px auto 20px;position:relative;cursor:pointer;transition:.3s}.gift:hover{transform:scale(1.06)}.gift-box{position:absolute;bottom:0;width:150px;height:95px;border-radius:8px;background:#70b8e5;box-shadow:0 12px 20px #508fb533}.gift-box:before{content:"";position:absolute;left:63px;width:24px;height:100%;background:#fff8}.gift-lid{position:absolute;top:18px;left:-8px;width:166px;height:27px;background:#4e9bce;border-radius:7px;transition:.5s}.gift-lid:before{content:"";position:absolute;left:65px;top:-25px;width:36px;height:30px;border:8px solid #fff;border-radius:50% 50% 0 50%;transform:rotate(25deg)}.gift.open .gift-lid{transform:translateY(-65px) rotate(-12deg)}.hidden-message{display:none;background:#ffffffb8;border-radius:22px;padding:28px;line-height:1.8;font-size:1.25rem;animation:appear .6s}.hidden-message.show{display:block}@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+footer{text-align:center;padding:45px 20px 65px;color:#6793ad;font:13px Arial,sans-serif}.music{position:fixed;right:18px;bottom:18px;z-index:10;border:1px solid #fff;background:#ffffffdf;color:#397fa9;border-radius:50px;padding:12px 17px;box-shadow:0 8px 25px #427da52b;font:13px Arial,sans-serif}.music b{margin-right:7px}.heart{color:#6aafe0}
+.confetti{position:fixed;top:-20px;width:9px;height:14px;z-index:20;pointer-events:none;animation:fall 3.8s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.2}}
+@media(max-width:700px){.gallery{grid-template-columns:1fr 1fr;gap:12px}.photo img{height:210px}.photo:nth-child(2){transform:none}.photo:last-child{grid-column:1/-1}.hero{min-height:90svh}.floating{opacity:.5}}
+@media(max-width:420px){.gallery{grid-template-columns:1fr}.photo:last-child{grid-column:auto}.photo img{height:250px}}
+</style>
+</head>
+<body>
+<audio id="birthdaySong" loop preload="none"><source src="assets/your-song.mp3" type="audio/mpeg"></audio>
+<button class="music" id="musicBtn" aria-label="Play background song"><b>♫</b> Play our song</button>
+
+<header class="hero" id="home">
+  <span class="floating f1">♡</span><span class="floating f2">✧</span><span class="floating f3">☁</span><span class="floating f4">♡</span>
+  <div class="hero-inner">
+    <h1>Happy Birthday <span>Mahal</span></h1>
+    <p>Today is all about you — your smile, your laugh, and all the little things that make you so special to me. 💙</p>
+    <button class="pill" onclick="document.querySelector('#letter').scrollIntoView({behavior:'smooth'})">A little something for you ↓</button>
+  </div>
+</header>
+
+<section id="letter"><div class="section-inner">
+  <div class="section-kicker">From my heart to yours</div><h2 class="section-title">To my favourite person</h2>
+  <div class="note">
+    Happy birthday, sweetheart. I wish I could be right beside you today, holding your hand and making you smile.
+    Thank you for being part of my life and making even ordinary days feel special. May your special day bring you all the love, happiness, and warmth you deserve. You deserve nothing but the very best, sweetheart.
+    No matter the distance, you are always close to my heart. I love you so very much Mahal.. 💙
+    <span class="signature">Forever yours ♡</span>
+  </div>
+</div></section>
+
+<section id="memories"><div class="section-inner">
+  <div class="section-kicker">Little moments, big feelings</div><h2 class="section-title">Things I love about you.</h2>
+
+  <div class="gallery">
+    <figure class="photo"><img src="assets/photo-1.jpeg" alt="Our favourite memory"><figcaption>Your beautiful smile💙</figcaption></figure>
+    <figure class="photo"><img src="assets/photo-2.jpeg" alt="A lovely memory"><figcaption>Your pure heart💙</figcaption></figure>
+    <figure class="photo"><img src="assets/photo-3.jpeg" alt="A special memory"><figcaption>Your innocence💙</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="video"><div class="section-inner">
+  <div class="section-kicker">Press play</div><h2 class="section-title">A little video for you</h2>
+  
+  <div class="video-wrap"><video controls playsinline poster="assets/video-poster.jpg"><source src="assets/our-video.mp4" type="video/mp4">Your browser does not support video playback.</video><div class="video-caption">A beautiful little preview of our someday 🥹</div></div>
+</div></section>
+
+<section id="surprise"><div class="section-inner surprise">
+  <div class="section-kicker">One last thing...</div><h4 class="section-title">I wannted to say to you!</h4>
+  <p class="sub">Tap to a Gift Box to read it! 🎁</p>
+  <div class="gift" id="gift" role="button" tabindex="0" aria-label="Open birthday gift"><div class="gift-lid"></div><div class="gift-box"></div></div>
+  <div class="hidden-message" id="secret">If I could give you one thing, it would be the ability to see yourself through my eyes — then you'd know just how precious and amazing you are to me.
+
+Happy birthday, my beautiful girl! I can't wait for all the beautiful memories we'll create when we're finally together.
+
+Once again, happy birthday, babyyy! I love you with my whole heart and soul, Mahal! 💙</div>
+</div></section>
+
+<footer>Made with <span class="heart">♥</span> just for you · Happy Birthday Mahal s!</footer>
+<script>
+const song=document.getElementById('birthdaySong'), musicBtn=document.getElementById('musicBtn');
+musicBtn.addEventListener('click',async()=>{if(song.paused){try{await song.play();musicBtn.innerHTML='<b>♫</b> Pause our song'}catch(e){musicBtn.textContent='Add your song in assets/';}}else{song.pause();musicBtn.innerHTML='<b>♫</b> Play our song'}});
+const gift=document.getElementById('gift'), secret=document.getElementById('secret');
+function openGift(){gift.classList.add('open');secret.classList.add('show');confetti();}
+gift.addEventListener('click',openGift);gift.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openGift()}});
+function confetti(){const chars=['✦','♥','•','✧'];for(let i=0;i<65;i++){const el=document.createElement('span');el.className='confetti';el.textContent=chars[Math.floor(Math.random()*chars.length)];el.style.left=Math.random()*100+'vw';el.style.color=['#6eb8e7','#a5d9f6','#fff','#438fbe'][Math.floor(Math.random()*4)];el.style.animationDuration=(2.5+Math.random()*2)+'s';el.style.fontSize=(10+Math.random()*15)+'px';document.body.appendChild(el);setTimeout(()=>el.remove(),5000)}}
+document.querySelector('.pill').addEventListener('click',confetti);
+</script>
+</body></html>
