@@ -74,7 +74,7 @@ Once again, happy birthday, babyyy! I love you with my whole heart and soul, Mah
 <footer>Made with <span class="heart">♥</span> just for you · Happy Birthday Mahal s!</footer>
 <script>
 const song=document.getElementById('birthdaySong'), musicBtn=document.getElementById('musicBtn');
-musicBtn.addEventListener('click',async()=>{if(song.paused){try{await song.play();musicBtn.innerHTML='<b>♫</b> Pause our song'}catch(e){musicBtn.textContent='Add your song in assets/';}}else{song.pause();musicBtn.innerHTML='<b>♫</b> Play our song'}});
+musicBtn.addEventListener('click',async()=>{if(song.paused){try{await song.play();musicBtn.innerHTML='<b>♫</b> Play Me 💿'}catch(e){musicBtn.textContent='Add your song in assets/';}}else{song.pause();musicBtn.innerHTML='<b>♫</b> Play Me 💿'}});
 const gift=document.getElementById('gift'), secret=document.getElementById('secret');
 function openGift(){gift.classList.add('open');secret.classList.add('show');confetti();}
 gift.addEventListener('click',openGift);gift.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openGift()}});
